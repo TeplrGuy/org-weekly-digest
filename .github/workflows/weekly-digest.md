@@ -7,12 +7,14 @@ permissions:
   contents: read
   issues: read
   pull-requests: read
+  actions: read
 tools:
   github:
     toolsets: [repos, issues, pull_requests, actions]
     github-token: ${{ secrets.GH_AW_CROSS_REPO_PAT }}
     allowed-repos:
-      - "TeplrGuy/*"
+      - "teplrguy/*"
+    min-integrity: none
 safe-outputs:
   create-issue:
     max: 1

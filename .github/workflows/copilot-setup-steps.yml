@@ -1,0 +1,15 @@
+# Copilot Setup Steps
+# This reusable workflow installs dependencies needed by Copilot-powered agentic workflows.
+# Referenced automatically by gh-aw compiled workflows.
+
+name: "Copilot Setup Steps"
+
+on:
+  workflow_call:
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
